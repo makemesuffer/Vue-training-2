@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <the-header title="Remember Me"></the-header>
+  <the-resources></the-resources>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TheResources from "./components/learning-resources/TheResources.vue";
+import TheHeader from "./components/layouts/TheHeader.vue";
 
 export default {
-  name: "App",
   components: {
-    HelloWorld,
+    TheHeader,
+    TheResources,
+  },
+  data() {
+    return {};
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
 }
 </style>
